@@ -1,0 +1,17 @@
+@using Parcel.Models;
+
+<h1>Shipping Center</h1>
+
+
+@if (Model.Count == 0)
+{
+    <p>There are no results</p>
+}
+<ul>
+
+    @foreach (Package package in Model)
+    {
+    }
+</ul>
+
+<a href= '/packages/new'> Add a new package</a>
